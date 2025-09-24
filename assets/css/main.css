@@ -2710,7 +2710,7 @@ input, select, textarea {
 /*                           STYLE OF THE BOXES                                         */
 /* ------------------------------------------------------------------------------------ */
 
-			.tiles article.style_mechanics > .image:before {
+			/* .tiles article.style_mechanics > .image:before {
 				background-color: #f2849e;
 			}
 
@@ -2732,7 +2732,7 @@ input, select, textarea {
 
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
-			}
+			} */
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
@@ -3365,11 +3365,11 @@ input, select, textarea {
 /* ------------------------------------------------------------------------------------------ */
 .tiles article.Summary_Map {
   position: relative;                     /* positioning context */
-  width: calc(92% + 2em);               /* full container width plus extra to match design */
+  width: calc(93.15% + 2em);               /* full container width plus extra to match design */
   max-width: 100%;                        /* prevent overflow */
   margin: 0 auto;                         /* center horizontally */
-  left: 50%;                              /* start from center of container */
-  transform: translateX(-50%);            /* shift back by half width for perfect centering */
+  right: 50%;                              /* start from center of container */
+  transform: translateX(54%);            /* shift back by half width for perfect centering */
   height: 200px;                          /* adjustable height */
   border-radius: 50px;                     /* rounded corners */
   overflow: hidden;                        /* hide overflowing content */
