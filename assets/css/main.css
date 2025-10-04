@@ -153,7 +153,7 @@ hr.gradient_brown, hr.gradient_blue, hr.gradient_white {
     margin: 30px auto;
 }
 hr.gradient_brown { background: linear-gradient(to right, transparent, rgb(157, 90, 1), transparent); }
-hr.gradient_blue { background: linear-gradient(to right, transparent, rgb(4, 1, 170), transparent); }
+hr.gradient_blue { background: linear-gradient(to right, transparent, #00ccff, transparent); }
 hr.gradient_white { background: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent); }
 
 /* Text Alignment */
@@ -1700,6 +1700,13 @@ body.is-touch .tiles article .content {
 }
 
 
+/* --- Hover effect --- */
+#header nav ul li a[href="#menu"]:hover {
+    transform: scale(1.2);   /* scale up square */
+}
+
+
+
 
 /* Responsive Header */
 @media screen and (max-width: 736px) {
@@ -2242,7 +2249,7 @@ iframe {
 
 /* ------------------------------------------------------------------------------------------------------------- */
 
-Reset & Base Styles
+/* Reset & Base Styles
 Type & Headings
 Horizontal Rules
 Alignment
@@ -2276,4 +2283,4 @@ Responsive Summary Map Tile Heights
 Remove decorations from all tiles
 Lineup Styling
 General Body Styling
-Audio Row Layout
+Audio Row Layout */
