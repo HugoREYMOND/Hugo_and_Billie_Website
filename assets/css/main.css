@@ -2316,6 +2316,54 @@ iframe {
 
 
 
+/* --- Back to Menu Button --- */
+#back-to-menu {
+	position: absolute;
+	top: 80px;   /* adjust vertical distance */
+	left: 20px;  /* adjust horizontal distance */
+	z-index: 2000;
+
+	background: transparent;       /* transparent background */
+	color: #888888;               /* gray text by default */
+	border: 2px solid #888888;    /* gray border by default */
+	padding: 8px 14px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif; /* Phantom uses Source Sans Pro */
+	font-weight: 600;             /* similar weight to Phantom headings */
+	font-size: 0.9em;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect: text & border blue + zoom */
+#back-to-menu:hover {
+	color: #00ccff;
+	border-color: #00ccff;
+	transform: scale(1.1);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+	#back-to-menu {
+		top: 70px;
+		left: 15px;
+		font-size: 0.85em;
+		padding: 6px 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	#back-to-menu {
+		top: 65px;
+		left: 10px;
+		font-size: 0.8em;
+		padding: 5px 10px;
+	}
+}
+
 
 
 
