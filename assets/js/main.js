@@ -172,11 +172,17 @@
 			.appendTo('head');
 	});
 
-// ------------------------------
-// SoundCloud Music Player (History-safe)
-// ------------------------------
+// -----------------------
+// SoundCloud Music Player
+// -----------------------
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 (function() {
     const tracks = [
+		{ title: "Valse Sentimentale", url: "https://w.soundcloud.com/hugo-reymond/shurdas" },
+		{ title: "Valse Sentimentale", url: "https://w.soundcloud.com/hugo-reymond/stradimarius" },
         { title: "Valse Sentimentale", url: "https://soundcloud.com/hugo-reymond/valse-sentimentale" },
         { title: "Medley Roumain", url: "https://soundcloud.com/hugo-reymond/medley-roumain" },
         { title: "Bossa Dorado", url: "https://soundcloud.com/hugo-reymond/bossa-dorado" },
@@ -189,6 +195,9 @@
         { title: "Mustang Sally", url: "https://soundcloud.com/user-342226925/mustang-sally-wilson-pickett" },
         { title: "Daniel", url: "https://soundcloud.com/user-342226925/daniel-final-session-44100-1" }
     ];
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     let playOrder = [];
     let currentIndex = 0;
