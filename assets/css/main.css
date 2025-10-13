@@ -2384,6 +2384,71 @@ iframe {
 
 
 
+/* --- Open PDF Button --- */
+#open-pdf {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    background: transparent;
+    color: #888888;
+    border: 2px solid #888888;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 20px auto 0; /* center horizontally and add top margin */
+
+    /* Improved rendering */
+    transform-origin: center;
+    will-change: transform;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Hover effect: text & border blue + zoom */
+#open-pdf:hover {
+    color: #00ccff;
+    border-color: #00ccff;
+    transform: scale(1.1);
+}
+
+/* Active click effect (slight shrink) */
+#open-pdf:active {
+    transform: scale(0.95);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    #open-pdf {
+        font-size: 0.85em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #open-pdf {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+}
+
+/* Center the controls container */
+.controls {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -2430,4 +2495,6 @@ Lineup Styling
 General Body Styling
 Audio Row Layout
 Smaller Audio Player
-Simple Music Player */
+Simple Music Player
+Open pdf button
+*/

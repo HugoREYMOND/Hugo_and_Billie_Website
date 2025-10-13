@@ -7,7 +7,7 @@
 <html>
 	<head>
 <!-- ------------------------------------------------------ Update the title --------------------------------------------------->
-		<title>Pedalboard - Hugo&Billie</title>
+<title>Pedalboard Tech Report - Hugo&Billie</title>
 <!-- ------------------------------------------------------------------------------------------------------------------------ -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -19,6 +19,62 @@
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	</head>
+
+
+
+
+<style>
+
+/* Container PDF */
+.pdf-container {
+    width: 65vw;       /* largeur du viewer */
+    height: 50vw;      /* hauteur du viewer */
+
+    /* positionnement relatif pour décalage depuis le centre */
+    margin: 20px auto; /* centré horizontalement par défaut */
+    position: relative;
+    left: 0%;           /* décalage horizontal par rapport au centre, en % */
+    transform: translateX(0%); /* complément pour décalage précis */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+</style>
+
+
+
+
+
+
+<body>
+    <script>
+        const container = document.querySelector('.pdf-container');
+        let offset = 12; // en pourcentage
+
+        function move(amount) {
+            offset += amount;
+            container.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+
+<!-- ---------------------------------------------------------------------------------- -->
+
 
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -36,9 +92,9 @@
       </a>
 
       <!-- Back to Menu button just under the logo -->
-      <a href="main_mechanics.html" id="back-to-menu">
-        <i class="fa-solid fa-arrow-left"></i> Back to Mechanics
-      </a>
+		<a href="main_pedalboard.html" id="back-to-menu">
+			<i class="fa-solid fa-arrow-left"></i> Back to Pedalboard
+		</a>
     </div>
 
     <!-- Nav -->
@@ -61,74 +117,28 @@
 						</ul>
 					</nav>
 
-<!-- ----------------------------------- Update the title and level from the root with "../../../" -------------------------- -->
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Pedalboard</h1>
-							<!-- <span class="image main"><img src="../../images/pic13.jpg" alt="" /></span> -->
-							<p>Choose the pieces of information you are interested in...</p>
-						</div>
-					</div>
-<!-- -------------------------------------------- BLOCS CREATION ------------------------------------------------------------ -->
-					<div id="main">
-						<div class="inner">
-							<section class="tiles">
-<!-- ------------------------------------------------------------------------------------------ -->
-								<article class="tile">
-									<span class="image">
-										<img src="tech_report.png" alt="" />
-									</span>
-									<a href="pedalboard_report.html">
-										<h2>Design & Build Report</h2>
-										<div class="content">
-											<p>Tools&materials, explanation, advices, photographs</p>
-										</div>
-									</a>
-								</article>
-<!-- ------------------------------------------------------------------------------------------ -->
-								<article class="tile">
-									<span class="image">
-										<img src="photo_mechanics.jpg" alt="" />
-									</span>
-									<a href="pedalboard.html">
-										<h2>Photographs</h2>
-										<div class="content">
-											<p>Clic here to see some photographs / illustrations of the project</p>
-										</div>
-									</a>
-								</article>
-<!-- ------------------------------------------------------------------------------------------ -->
-								<article class="tile">
-									<span class="image">
-										<img src="3D_models.jpg" alt="" />
-									</span>
-									<a href="pedalboard.html">
-										<h2>3D models</h2>
-										<div class="content">
-											<p>Clic here to see or download the 3D models</p>
-										</div>
-									</a>
-								</article>
-<!-- ------------------------------------------------------------------------------------------ -->
-								<article class="tile">
-									<span class="image">
-										<img src="3D_printing_code.jpg" alt="" />
-									</span>
-									<a href="pedalboard.html">
-										<h2>3D printing codes</h2>
-										<div class="content">
-											<p>Clic here to see or download the 3D printng codes</p>
-										</div>
-									</a>
-								</article>
+<!-- ------------------------------------------------------------------------------------------- -->
+				
+<!-- Main -->
+<div id="main">
+	<div class="inner">
+		<h1>Pedalboard Technical Report</h1>
+
+		<div class="pdf-container">
+			<!-- ✅ Embedded PDF via iframe -->
+			<iframe src="pedalboard_report.pdf#toolbar=1&navpanes=0&scrollbar=1&zoom=100"></iframe>
+		</div>
+
+		<!-- Open-in-new-top button -->
+		<div class="controls">
+			<button id="open-pdf" onclick="window.open('pedalboard_report.pdf', '_blank')">Full screen report (Open in New Tab)</button>
+		</div>
+
+	</div>
+</div>
 
 
 
-
-
-						</div>
-					</div>
 
 
 
